@@ -1,0 +1,71 @@
+{% extends 'hwapp/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container py-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Search</h2>
+                <form class="row g-3">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Enter your search query">
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <section class="jumbotron text-center">
+            <h1>Welcome to Our Medical Apps</h1>
+            <p class="lead">Explore our medical services and features.</p>
+            <a href="#features" class="btn btn-primary">Learn More</a>
+          </section>
+        
+          <!-- Features Section -->
+          <section id="features" class="container mt-5">
+            <h2 class="text-center mb-4">Our Features</h2>
+            <div class="row">
+              <!-- First Feature Card -->
+              <div class="col-md-4 mb-4">
+                <a href="#" class="card-link" target="_blank">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Doctor Search</h5>
+                      <p class="card-text">Find and book doctors near you.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Second Feature Card -->
+              <div class="col-md-4 mb-4">
+                <a href="#" class="card-link" target="_blank">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">AI Doctor</h5>
+                      <p class="card-text">Get medical advice from AI-powered chatbot.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Third Feature Card -->
+              <div class="col-md-4 mb-4">
+                <a href="#" class="card-link" target="_blank">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">First Aid / Remedies</h5>
+                      <p class="card-text">Access emergency medical services 24/7.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Add more sets of three feature cards here -->
+          </section>
+          
+    </div>
+{% endblock %}
